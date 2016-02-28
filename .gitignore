@@ -1,0 +1,15 @@
+*.css
+*.css.map
+.sass-cache/
+bower_components
+*.rtf
+*.pptx
+
+# compiled JS
+scripts
+
+
+
+#____server stuff____
+node_modules/
+

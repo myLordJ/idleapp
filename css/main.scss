@@ -1,0 +1,24 @@
+// put custom bootstrap styles to change sass variables, before loading if you want to
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/reset-css/_reset.scss";
+
+//____________________Variables_____________________
+
+
+
+
+
+
+
+
+//____________________Loading Components_____________________
+@import "generalStyles";
+
+
+// mixins
+@import "mixins/mediaQuery";
+
+
+
+
