@@ -5,6 +5,8 @@
 
 //____________________Variables_____________________
 
+$headerFont: 'Merriweather', serif;
+$textFont: 'Roboto Slab', serif;
 
 
 
@@ -13,11 +15,18 @@
 
 
 //____________________Loading Components_____________________
-@import "generalStyles";
-
-
 // mixins
 @import "mixins/mediaQuery";
+
+
+
+
+
+
+@import "generalStyles";
+@import "sections/introSection";
+
+
 
 
 

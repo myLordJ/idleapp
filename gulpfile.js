@@ -38,27 +38,27 @@ gulp.task('javascript', function() {
 
 
 		// loading each bootstrap JS component in right order
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
-		// './client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
-		// './client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
-		'./client/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+		// './bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
 
 
 		// './bower_components/bootstrap-sass/assets/javascripts/bootstrap/*js',
 
 
 
-		// './client/bower_components/angular/angular.js',
+		// './bower_components/angular/angular.js',
 		// './bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js',
-		// './client/bower_components/angular-ui-router/release/angular-ui-router.js',
+		// './bower_components/angular-ui-router/release/angular-ui-router.js',
 
 
 
@@ -80,7 +80,7 @@ gulp.task('javascript', function() {
 		])
 
 	.pipe(concat('all.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest('./scripts'))
 }); // end of javascript gulp task
 
@@ -96,7 +96,8 @@ gulp.task('sass', function () {
 		])
 	.pipe(sourcemaps.init())
 
-	.pipe(sass({outputStyle: 'compressed'})
+	// .pipe(sass({outputStyle: 'compressed'})
+	.pipe(sass()
 
 		.on('error', sass.logError))
 

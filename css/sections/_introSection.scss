@@ -1,0 +1,19 @@
+div.intro-section{
+	font-size: 1rem;
+	@include desktop {
+		font-size: .9rem;
+	}
+	@include tabletOrLess {
+		font-size: .8rem;
+	}
+
+	h1.welcome-header{
+		font-size: 2em;
+		text-align: center;
+		margin: 10px 0 30px;
+	}
+	h4.welcome-description{
+		max-width: 800px;
+		margin: auto;
+	}
+} // end intro section, nothing below this
