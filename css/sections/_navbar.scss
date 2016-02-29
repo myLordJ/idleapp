@@ -1,0 +1,30 @@
+nav.navbar{
+	// pushes content below navbar
+	& + div.navbar-spacer{
+		opacity: 0;
+		padding-top: $navbar-height;
+		height: 0;
+	}
+
+	a.navbar-brand{
+		img.logo{
+			height: 40px;
+			position: relative;
+			top: -10px;
+		}
+	}
+
+	@include tabletOrMore {
+		ul.navbar-nav{
+			float: right;
+		}
+	}
+
+
+
+
+
+
+
+
+}

@@ -77,6 +77,10 @@ gulp.task('javascript', function() {
 		//_______My controllers, directives, app.js__________________________
 		// './client/js/app.js',
 
+		// my custom JS file with jquery
+
+		'./js/main.js'
+
 		])
 
 	.pipe(concat('all.js'))
