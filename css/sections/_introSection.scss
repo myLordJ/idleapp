@@ -1,9 +1,8 @@
 section.intro-section{
-	min-height: 300px;
-	background: #ABD37C;
-	margin-bottom: 2000px;
-	color: white;
 	font-size: 1rem;
+	min-height: 300px;
+	background: $idleGreen;
+	color: white;
 	@include desktop {
 		font-size: .9rem;
 	}

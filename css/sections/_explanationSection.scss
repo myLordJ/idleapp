@@ -1,0 +1,50 @@
+section.explanation{
+	font-size: 1rem;
+	background: #eee;
+
+	div.explanation-part{
+		@include phoneOrLess {
+			&:not(:last-of-type){
+				margin-bottom: 40px;
+			}
+		}
+		// border: 2px solid red;
+		// background: green;
+		position: relative;
+	}
+
+	div.text-wrapper{
+		margin-left: 50px;
+		padding-left: 5px;
+		// background: gold;
+		h5{
+			text-align: left;
+			font-size: 1.3em;
+			margin-bottom: 10px;
+			// background: blue;
+		}
+	}
+
+
+	i{
+		// background: blue;
+		top: 8px;
+		left: 10px;
+		position: absolute;
+		font-size: 3em;
+		color: black;
+		z-index: 10;
+		// make users icon smaller, loooks too big
+		&.fa-users{
+			font-size: 2.4em;
+		}
+		&.fa-thumbs-o-up{
+			font-size: 2.7em;
+		}
+
+	}
+
+
+
+
+}
