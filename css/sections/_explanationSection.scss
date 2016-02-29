@@ -1,9 +1,9 @@
 section.explanation{
 	font-size: 1rem;
-	background: #eee;
+	background: #fafafa;
 
 	div.explanation-part{
-		@include phoneOrLess {
+		@include tabletOrLess {
 			&:not(:last-of-type){
 				margin-bottom: 40px;
 			}
@@ -19,9 +19,12 @@ section.explanation{
 		// background: gold;
 		h5{
 			text-align: left;
-			font-size: 1.3em;
+			font-size: 1.2em;
 			margin-bottom: 10px;
 			// background: blue;
+		}
+		p{
+			font-size: .9em;
 		}
 	}
 

@@ -12,7 +12,7 @@ $(document).ready(function() {
            if (target.length) {
              $('html,body').animate({
                  easing: 'linear',
-                 scrollTop: target.offset().top
+                 scrollTop: target.offset().top-50
             }, 400);
             return false;
         }
