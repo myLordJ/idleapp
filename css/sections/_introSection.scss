@@ -9,13 +9,21 @@ section.intro-section{
 	@include tabletOrLess {
 		font-size: .8rem;
 	}
+	@include phoneOrLess {
+		font-size: .7rem;
+	}
 
 	h1.welcome-header{
+		text-transform: uppercase;
 		font-size: 2.7em;
 		text-align: center;
 		margin: 10px 0 30px;
 	}
 	h4.welcome-description{
+		font-size: 1em;
+		@include phoneOrLess {
+			font-size: 1.2em;
+		}
 		max-width: 800px;
 		margin: auto;
 	}
