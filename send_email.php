@@ -32,14 +32,15 @@ $mail_status = mail($mail_to, $subject, $body_message);
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
         alert('Thank you for the message! We will contact you shortly.');
-        window.location = 'http://slysbarbershop.com'
+        $('body').css('background', 'red');
+        // window.location = 'http://theidleapp.com'
     </script>
 <?php
 }
 else { ?>
     <script language="javascript" type="text/javascript">
-        alert('Message failed. Please, send an email to pkrieg2@gmail.com');
-        window.location = 'http://slysbarbershop.com';
+        alert('Message failed. Please, send an email to sebamartinezmiranda@gmail.com');
+        window.location = 'http://theidleapp.com';
     </script>
 <?php
 }
