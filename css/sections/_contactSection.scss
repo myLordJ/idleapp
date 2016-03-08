@@ -49,8 +49,12 @@ section.contact{
 				width: 80%;
 				margin: auto;
 			}
-
 		}
+		// to prevent spam, hide it
+		input#decoy{
+			display: none;
+		}
+
 
 	}
 

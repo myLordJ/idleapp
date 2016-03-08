@@ -98,14 +98,14 @@ gulp.task('sass', function () {
 		'./css/main.scss',
 
 		])
-	.pipe(sourcemaps.init())
+	// .pipe(sourcemaps.init())
 
 	// .pipe(sass({outputStyle: 'compressed'})
 	.pipe(sass()
 
 		.on('error', sass.logError))
 
-	.pipe(sourcemaps.write())
+	// .pipe(sourcemaps.write())
 
 
 	.pipe(concat('main.css'))
