@@ -1,22 +1,114 @@
+@include keyframes(fadeInUp) {
+	0% {
+		opacity: 0;
+		margin-top: 300px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+@include keyframes(fadeIn) {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 section.email-form{
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	background: rgba(0, 0, 0, 1);
+	padding-top: 300px;
 
-	div.box {
-		width: 100px;
-		height: 100px;
-		background: tomato;
-		margin-bottom: 20px;
-		padding-bottom: 10px;
-		outline: black 2px solid;
+	// @include animation(fadeInUp, 1s, ease);
+
+
+	&:not(.hidden){
+		@include transition(.5s ease);
+		padding-top: 0;
+		background: rgba(0, 0, 0, .7);
 	}
+
+
+	.show-email-form &{
+		display: flex;
+	}
+
+
+	form {
+		@include animation(fadeInUp 1.0s ease);
+		width: 700px;
+		@include phoneOrLess {
+			width: 95%;
+		}
+		position: relative;
+
+		label{
+			color: white;
+			opacity: .8;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 3px;
+		}
+
+		.required>label{
+			&:after{
+				content: "*"
+			}
+		}
+
+		input{
+			height: 45px;
+		}
+
+
+
+
+
+
+		// to prevent spam, hide it
+		input#decoy{
+			display: none;
+		}
+
+		button.send{
+			@extend .get-in-touch;
+		}
+
+		div.close-form{
+			cursor: pointer;
+			background: none;
+			border: none;
+			position: absolute;
+			right: -30px;
+			@include phoneOrLess {
+				right: 0px;
+			}
+			top: -25px;
+			span{
+				color: white;
+				font-size: 40px;
+			}
+		}
+		
+	}
+
+
+
+
+
+
+
 
 
 

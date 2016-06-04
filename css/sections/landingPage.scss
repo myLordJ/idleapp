@@ -65,9 +65,7 @@ section.main-wrapper{
 		padding: 13px 25px;
 		border-radius: 20px/21px;
 		border: 1px solid #ddd;
-		&:hover{
-			cursor: pointer;
-		}
+		cursor: pointer;
 		&:focus, &.active{
 			outline: none !important;
 		}

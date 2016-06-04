@@ -48,7 +48,30 @@
 
 
 
-	<section class="email-form">
+	<section class="email-form hidden" >
+		<form action="send_email.php" method="post">
+			<input type="text" id="decoy" name="decoy" />
+			<div class="form-group required">
+				<label for="name">Name</label>
+				<input name="cf_name" type="text" class="form-control" id="name" placeholder="Name">
+			</div>
+			<div class="form-group required">
+				<label for="email">Email address</label>
+				<input name="cf_email" type="email" class="form-control" id="email" placeholder="Email">
+			</div>
+			<div class="form-group required">
+				<label for="message">Message</label>
+				<textarea rows="6" name="cf_message" type="text" class="form-control" id="message" placeholder="Message"></textarea>
+			</div>
+			<!-- to prevent spam, a "gotcha" element -->
+			<input type="text" name="_gotcha" style="display:none" />
+			<button type="submit" class="btn btn-default send">Send</button>
+
+			<div class="close-form">
+				<span>&times;</span>
+			</div>
+
+		</form>
 		
 
 
