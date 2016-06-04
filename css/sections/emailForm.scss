@@ -5,7 +5,7 @@ section.email-form{
 	@include transition(.3s ease)
 	.show-email-form &{
 		visibility: visible;
-		background: rgba(0, 0, 0, .7);
+		background: rgba(117, 187, 180, .7);
 		@include transition(.8s ease);
 	}
 	display: flex;
