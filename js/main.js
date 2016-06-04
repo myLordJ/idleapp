@@ -1,23 +1,28 @@
 $(document).ready(function() {
+  var $body = $('body');
+
+  function checkWindowSize(){
+    $body.toggleClass('tall-body', $(window).height() > 600 && $(window).width() > 991);
+  }
+  // first time on load
+  checkWindowSize();
+  $(window).resize(checkWindowSize);
+
+
+  $('button.get-in-touch').click(function(){
+    console.log('clicked!!');
+
+  });
+
+  // state true is to show it, false is to hide it
+  function toggleEmailForm(state){
 
 
 
-  // stuff I got from css tricks..
-  $('.smooth-scroll').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
 
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 easing: 'linear',
-                 scrollTop: target.offset().top-50
-            }, 400);
-            return false;
-        }
-    }
-});
+  }
+
+
 
 
 

@@ -8,8 +8,8 @@ $navbar-height: 70px;
 
 //____________________Variables_____________________
 
-$headerFont: 'Merriweather', serif;
-$textFont: 'Roboto Slab', serif;
+$headerFont: 'Roboto', sans-serif;
+$textFont: 'Roboto', sans-serif;
 
 // theme colors
 $idleGreen: #ABD37C;
@@ -29,11 +29,17 @@ $idleGreen: #ABD37C;
 
 
 @import "generalStyles";
-@import "sections/navbar";
-@import "sections/introSection";
-@import "sections/explanationSection";
-@import "sections/contactSection";
-@import "sections/footer";
+@import "sections/landingPage";
+@import "sections/emailForm";
+
+
+
+
+// @import "sections/navbar";
+// @import "sections/introSection";
+// @import "sections/explanationSection";
+// @import "sections/contactSection";
+// @import "sections/footer";
 
 
 

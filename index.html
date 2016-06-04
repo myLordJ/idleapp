@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en-us">
 <head>
@@ -11,7 +12,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- google fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300|Roboto+Slab:400,700,100' rel='stylesheet' type='text/css'>	
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,400italic,100italic,700italic' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700normal,700italic"/>
+
 
 	<link rel="stylesheet" href="css/main.css">
 	
@@ -19,139 +22,56 @@
 
 <body>
 
-	<!-- navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand smooth-scroll" href="#home"><img class="logo" src="img/logo.png" alt=""></a>
+	<section class="main-wrapper">
+		<h1 class="home-header">Idle</h1>
+
+		<div class="content-wrapper">
+			<h1 class="main-header">Make the Most of Your Time</h1>
+
+			<div class="explanation">
+				<p>Idle is a hyper-local platform for tasks and services. Simply post a task and someone from your community will get it done for you.</p>
+				<p>Need to free up some time? We got you.<br>  Have time on your hands? Perfect.</p>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li ><a href="#">The App<span class="sr-only">(current)</span></a></li>
-					<li><a class="smooth-scroll" href="#contact">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-	<div class="navbar-spacer">.</div>
-
-
-
-	<section class="container-wrapper intro-section" id="home">
-		<div class="container">
-
-			<h1 class="welcome-header">Make the Most of Your Time</h1>
-			<h4 class="welcome-description">Idle is a hyper-local platform for tasks and services.  Simply post a task and someone from your community will get it done for you.</h4>  
-
-			<br>
-			<h4 class="welcome-description">Need to free up some time?  We got you.  Have time on your hands?  Perfect.</h4> 
-
+			<button class="get-in-touch">
+				<li>Get In Touch</li>
+			</button>
+			
 		</div>
-	</section><!-- intro section-->
 
-	<section class="explanation container-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 explanation-part">
-					<li class="icon"><i class="fa fa-map-marker"></i></li>
-					<div class="text-wrapper">
-						<h5 class="explanation-header">Make the Most of Your Time</h5>
-						<p class="explanation-description">Post a task and free up your schedule or perform tasks in your free time</p>
-					</div>
-				</div>
-				<div class="col-md-4 explanation-part">
-					<li class="icon"><i class="fa fa-thumbs-o-up"></i></li>
-					<div class="text-wrapper">
-						<h5 class="explanation-header">Earn a quick buck</h5>
-						<p class="explanation-description">Make some cash helping out people in your community</p>
-					</div>
-				</div>
-				<div class="col-md-4 explanation-part">
-					<li class="icon"><i class="fa fa-users"></i></li>
-					<div class="text-wrapper">
-						<h5 class="explanation-header">Build Community</h5>
-						<p class="explanation-description">Our platform encourages dialogue between users helping you get to know your neighbors</p>
-					</div>
-				</div>
-				
-			</div>
-		</div>
+
+
+
+
+
 	</section>
 
 
-	<section class="contact container-wrapper" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 contact-component contact-info">
-					<h3>Contact Info</h3>
-					<ul class="contact-info">
-<!-- 						<li class="address">
-							<i class="fa fa-building"></i>
-							448 East 22nd St. 2C, Brooklyn, NY, 11226
-						</li>
- -->						<li class="email">
-							<i class="fa fa-envelope"></i>
-							<a href="mailto: collab@idle.com">collab@idle.com</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-8 contact-component contact-form">
-					<h3>Contact Us</h3>
-					<h6 class="contact-description">Feel free to contact us with any questions, suggestions, or job openings.</h6>
 
-					<form action="send_email.php" method="post">
-					<input type="text" id="decoy" name="decoy"></input>
-					<div class="form-group">
-							<label for="name">Name</label>
-							<input name="cf_name" type="text" class="form-control" id="name" placeholder="Name">
-						</div>
-						<div class="form-group">
-							<label for="email">Email address</label>
-							<input name="cf_email" type="email" class="form-control" id="email" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<label for="message">Message</label>
-							<textarea rows="6" name="cf_message" type="text" class="form-control" id="message" placeholder="Message"></textarea>
-						</div>
-						<!-- to prevent spam, a "gotcha" element -->
-						<input type="text" name="_gotcha" style="display:none" />
-						<button type="submit" class="btn btn-default">Send</button>
+	<section class="email-form">
+		
 
-					</form>
-				</div>
-			</div>
-		</div>
+
 
 	</section>
 
-	<!-- 	<footer>
-				<div class="container">
-					<p>Want a Footer or no?  </p>
-				</div>
-		</footer>
-	 -->
+
+
+
 
 
 
 	<script src="scripts/all.js"></script>
 
 	<!-- google analytics script-->
- 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-47952150-7', 'auto');
-  ga('send', 'pageview');
-</script>
+	<script>
+		/*eslint-disable  */
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-47952150-7', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
