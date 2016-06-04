@@ -28,7 +28,6 @@ $(document).ready(function() {
   // state true is to show it, false is to hide it
   function toggleEmailForm(state){
     var $body = $('body');
-    $('.email-form').toggleClass('hidden', !state);
     $body.toggleClass('show-email-form', state);
 
 

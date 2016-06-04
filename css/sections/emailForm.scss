@@ -1,24 +1,14 @@
-@include keyframes(fadeInUp) {
-	0% {
-		opacity: 0;
-		margin-top: 300px;
-	}
-	100% {
-		opacity: 1;
-		margin-top: 0px;
-	}
-}
-@include keyframes(fadeIn) {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 
 section.email-form{
+	visibility: hidden;
+	background: rgba(0, 0, 0, 0);
+	@include transition(.3s ease)
+	.show-email-form &{
+		visibility: visible;
+		background: rgba(0, 0, 0, .7);
+		@include transition(.8s ease);
+	}
+	display: flex;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -27,38 +17,41 @@ section.email-form{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background: rgba(0, 0, 0, 1);
-	padding-top: 300px;
 
 	// @include animation(fadeInUp, 1s, ease);
 
 
-	&:not(.hidden){
-		@include transition(.5s ease);
-		padding-top: 0;
-		background: rgba(0, 0, 0, .7);
-	}
 
-
-	.show-email-form &{
-		display: flex;
-	}
 
 
 	form {
-		@include animation(fadeInUp 1.0s ease);
+		@include transition(.3s ease);
+		margin-top: -400px;
+		opacity: 0;
+		.show-email-form &{
+			margin-top: 0;
+			opacity: 1;
+			@include transition(.8s ease)
+		}
 		width: 700px;
 		@include phoneOrLess {
 			width: 95%;
 		}
 		position: relative;
 
+		div.form-group{
+			margin-bottom: 30px;
+		}
+
+
+
+
 		label{
 			color: white;
 			opacity: .8;
 			font-size: 16px;
 			font-weight: 400;
-			margin-bottom: 3px;
+			margin-bottom: 5px;
 		}
 
 		.required>label{
@@ -89,15 +82,12 @@ section.email-form{
 			cursor: pointer;
 			background: none;
 			border: none;
+			right: 0;
 			position: absolute;
-			right: -30px;
-			@include phoneOrLess {
-				right: 0px;
-			}
 			top: -25px;
 			span{
 				color: white;
-				font-size: 40px;
+				font-size: 30px;
 			}
 		}
 		
