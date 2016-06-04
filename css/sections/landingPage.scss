@@ -44,7 +44,7 @@ section.main-wrapper{
 			@media (max-width: 480px){
 				width: 300px;
 				right: 5%;
-				opacity: .3;
+				opacity: .2;
 				@include transform(rotate(-20deg));
 			}
 			bottom: -70px;

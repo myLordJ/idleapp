@@ -84,7 +84,7 @@ gulp.task('javascript', function() {
 		])
 
 	.pipe(concat('all.js'))
-	// .pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest('./scripts'))
 }); // end of javascript gulp task
 
@@ -100,8 +100,8 @@ gulp.task('sass', function () {
 		])
 	// .pipe(sourcemaps.init())
 
-	// .pipe(sass({outputStyle: 'compressed'})
-	.pipe(sass()
+	.pipe(sass({outputStyle: 'compressed'})
+	// .pipe(sass()
 
 		.on('error', sass.logError))
 
