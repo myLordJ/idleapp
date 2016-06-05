@@ -29,13 +29,21 @@ $(document).ready(function() {
   function toggleEmailForm(state){
     var $body = $('body');
     $body.toggleClass('show-email-form', state);
-
-
-
-
-
-
   }
+
+  // mouse move effect, just wanted to try this for fun..
+  // var $iphone1 = $('.iphone-1');
+  // var $iphone2 = $('.iphone-2');
+
+  // $(window).mousemove(function(e){
+  //   console.log(e.pageX, e.pageY);
+
+  //   $iphone1.css('transform', 'rotate('+e.pageX/300+'deg)');
+  //   $iphone2.css('transform', 'rotate('+-e.pageY/300+'deg)');
+
+
+
+  // });
 
 
 
