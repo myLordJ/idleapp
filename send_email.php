@@ -20,7 +20,7 @@ else {
 
 
 
-    $mail_to = 'sebamartinezmiranda@gmail.com';
+    $mail_to = 'seba@theidleapp.com';
     $subject = 'Message from a site visitor: '.$field_name;
 
     $body_message = 'From: '.$field_name."\n";
